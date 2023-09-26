@@ -1,4 +1,4 @@
-import "./topbar.css"
+import "./topbar.scss";
 
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
@@ -15,7 +15,7 @@ export default function Topbar() {
             </div>
             <div className="topbarCenter">
                 <div className="searchbar">
-                    <SearchIcon className="searchIcon"/>
+                    <SearchIcon className="searchIcon" />
                     <input className="searchInput" placeholder="Search for frend, post or video" />
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default function Topbar() {
                         <span className="topbarIconBadge">
                             1
                         </span>
-                    </div>  
+                    </div>
                 </div>
                 <img className="topbarImg" src="/assets/person/1.jpeg" alt="" />
             </div>
