@@ -15,36 +15,36 @@ export default function Topbar() {
             </div>
             <div className="topbarCenter">
                 <div className="searchbar">
-                    <SearchIcon className="searchIcon" />
-                    <input className="searchInput" placeholder="Search for frend, post or video" />
+                    <SearchIcon className="searchbar__icon" />
+                    <input className="searchbar__input" placeholder="Search for frend, post or video" />
                 </div>
             </div>
             <div className="topbarRight">
-                <div className="topbarLinks">
-                    <span className="topbarLink">Homepage</span>
-                    <span className="topbarLink">Timeline</span>
+                <div className="topbarRight__links">
+                    <span className="topbarRight__link">Homepage</span>
+                    <span className="topbarRight__link">Timeline</span>
                 </div>
-                <div className="topbarIcons">
-                    <div className="topbarIconItem">
+                <div className="topbarRight__icons">
+                    <div className="topbarRight__icons-item">
                         <PersonIcon />
-                        <span className="topbarIconBadge">
+                        <span className="topbarRight__icons-item--badge">
                             1
                         </span>
                     </div>
-                    <div className="topbarIconItem">
+                    <div className="topbarRight__icons-item">
                         <ChatBubbleIcon />
-                        <span className="topbarIconBadge">
+                        <span className="topbarRight__icons-item--badge">
                             2
                         </span>
                     </div>
-                    <div className="topbarIconItem">
+                    <div className="topbarRight__icons-item">
                         <NotificationsIcon />
-                        <span className="topbarIconBadge">
+                        <span className="topbarRight__icons-item--badge">
                             1
                         </span>
                     </div>
                 </div>
-                <img className="topbarImg" src="/assets/person/1.jpeg" alt="" />
+                <img className="topbarRight__icons-img" src="/assets/person/1.jpeg" alt="" />
             </div>
         </div>
     )

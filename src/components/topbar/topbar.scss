@@ -1,4 +1,4 @@
-.topbarContainer{
+.topbarContainer {
     height: 50px;
     width: 100%;
     background-color: #1877f2;
@@ -7,22 +7,22 @@
     position: sticky;
     top: 0;
 
-    .topbarLeft{
+    .topbarLeft {
         flex: 3;
 
-        .logo{
+        .logo {
             font-size: 24px;
             margin-left: 20px;
             font-weight: bold;
             color: #fff;
-            cursor: pointer; 
+            cursor: pointer;
         }
     }
 
-    .topbarCenter{
+    .topbarCenter {
         flex: 5;
 
-        .searchbar{
+        .searchbar {
             width: 100%;
             height: 30px;
             background-color: #fff;
@@ -30,44 +30,44 @@
             display: flex;
             align-items: center;
 
-            .searchIcon{
+            &__icon {
                 font-size: 20px !important;
                 margin-left: 20px;
             }
 
-            .searchInput{
+            &__input {
                 border: none;
                 width: 70%;
 
-                &:focus{
+                &:focus {
                     outline: none;
                 }
             }
         }
     }
 
-    .topbarRight{
+    .topbarRight {
         flex: 4;
         display: flex;
         align-items: center;
         justify-content: space-around;
         color: #fff;
 
-        .topbarLink{
+        &__link {
             margin-right: 10px;
             font-size: 14px;
             cursor: pointer;
         }
 
-        .topbarIcons{
+        &__icons {
             display: flex;
             column-gap: 20px;
 
-            .topbarIconItem{
+            &-item {
                 position: relative;
                 cursor: pointer;
 
-                .topbarIconBadge{
+                &--badge {
                     width: 15px;
                     height: 15px;
                     background-color: #bc1111;
@@ -82,14 +82,16 @@
                     font-size: 12px;
                 }
             }
+
+            &-img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
         }
 
-        .topbarImg{
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            object-fit: cover;
-            cursor: pointer;
-        }
+
     }
 }
