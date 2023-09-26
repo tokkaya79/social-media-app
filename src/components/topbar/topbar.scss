@@ -1,4 +1,4 @@
-.topbarContainer {
+.topbar {
     height: 50px;
     width: 100%;
     background-color: #1877f2;
@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
 
-    .topbarLeft {
+    &__left {
         flex: 3;
 
         .logo {
@@ -19,7 +19,7 @@
         }
     }
 
-    .topbarCenter {
+    &__center {
         flex: 5;
 
         .searchbar {
@@ -46,7 +46,7 @@
         }
     }
 
-    .topbarRight {
+    &__right {
         flex: 4;
         display: flex;
         align-items: center;
@@ -91,7 +91,5 @@
                 cursor: pointer;
             }
         }
-
-
     }
 }
