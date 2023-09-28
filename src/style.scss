@@ -2,8 +2,11 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    box-sizing: border-box;
+}
 .container{
-    width: 1425px;
+    width: 1180px;
     margin: 0 auto;
     display: flex;
 }

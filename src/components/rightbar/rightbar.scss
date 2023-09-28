@@ -1,3 +1,72 @@
-.rightbar{
-    flex: 3.5;
+.rightbar {
+    flex: 3;
+
+    &__wrapper {
+        padding: 20px 20px 0 0;
+
+    }
+
+    &__birthday {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        &-text {
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    &__ad {
+        width: 100%;
+        border-radius: 10px;
+        margin: 30px;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+
+    &-friend {
+        &__list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__img-box{
+            margin-right: 10px;
+            position: relative;
+        }
+        &__img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &__online{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgb(10, 109, 10);
+            top: -2px;
+            right: 0;
+            border: 2px solid #fff;
+        }
+        &__name{
+            font-weight: 500;
+        }
+
+
+    }
+
 }
