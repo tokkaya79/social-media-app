@@ -10,7 +10,7 @@ export default function Share() {
         <div className="share">
             <div className="share__wrapper">
                 <div className="share__top">
-                    <img className="share__top-img" src="./assets/person/1.jpeg" alt="foto" />
+                    <img className="share__top-img" src="./assets/person/with_comp_mini.jpg" alt="foto" />
                     <input className="share__top-input" placeholder="What's in your mind Safak?" />
                 </div>
                 <hr className="share__hr" />

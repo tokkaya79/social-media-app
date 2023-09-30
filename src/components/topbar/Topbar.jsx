@@ -48,7 +48,7 @@ export default function Topbar() {
                     </div>
                     <img
                         className="topbar__right__icons-img"
-                        src="/assets/person/1.jpeg"
+                        src="/assets/person/with_comp_mini.jpg"
                         alt=""
                     />
                 </div>
