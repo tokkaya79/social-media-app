@@ -10,3 +10,12 @@ html{
     margin: 0 auto;
     display: flex;
 }
+
+.sidebar__friendlist-item--name, .rightbar-friend__name, .sidebar__list-item--text, .rightbar__birthday-text b, .post__top-name {
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar__friendlist-item:hover .sidebar__friendlist-item--name, .rightbar-friend__item:hover .rightbar-friend__name, .sidebar__list-item:hover .sidebar__list-item--text, .rightbar__birthday-text b:hover, .post__top-left:hover .post__top-name{
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}

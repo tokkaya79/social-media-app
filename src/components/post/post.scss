@@ -1,68 +1,68 @@
-.post{
+.post {
     width: 100%;
     border-radius: 10px;
     margin: 30px 0;
     -webkit-box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 1);
-    &__wrapper{
+    &__wrapper {
         padding: 10px;
     }
-    &__top{
+    &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &-left{
+        &-left {
             display: flex;
             align-items: center;
-            column-gap: 10px;
+            column-gap: 5px;
+            cursor: pointer;
         }
-        &-img{
+        &-img {
             width: 32px;
             height: 32px;
             border-radius: 50%;
             object-fit: cover;
         }
-        &-name{
-            margin: 0 10px;
+        &-name {
             font-size: 14px;
             font-weight: 500;
         }
-        &-time{
+        &-time {
             font-size: 12px;
         }
-        &-icon{
+        &-icon {
             cursor: pointer;
         }
-
     }
-    &__center{
+    &__center {
         margin: 20px 0;
-        &-img{
+        &-img {
             margin-top: 20px;
             width: 100%;
             max-height: 500px;
             object-fit: contain;
         }
     }
-    &__bottom{
+    &__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 10px;
-        &-left{
+        &-left {
             display: flex;
             align-items: center;
             column-gap: 10px;
         }
-        &-icon{
+        &-icon {
             width: 24px;
             height: 24px;
+            cursor: pointer;
         }
-        &-counter{
+        &-counter {
             font-size: 15px;
         }
-        &-text{
+        &-text {
             cursor: pointer;
             border-bottom: 1px dashed #ccc;
             font-size: 15px;

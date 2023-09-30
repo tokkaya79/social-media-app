@@ -1,5 +1,5 @@
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useState } from 'react';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import {Users} from "../../dateList.js";
 
@@ -13,7 +13,6 @@ export default function Post({post}) {
         setLike(isLiked ? like-1  : like+1)
         setIsLiked(!isLiked)
    }
-   
 
     return (
         <div className="post">

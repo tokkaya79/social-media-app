@@ -2,6 +2,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 15px;
+             cursor: pointer;
         }
         .rightbar-friend__img-box{
             margin-right: 10px;
@@ -12,6 +13,7 @@
             height: 40px;
             object-fit: cover;
             border-radius: 50%;
+            
         }
         .rightbar-friend__online{
             position: absolute;
