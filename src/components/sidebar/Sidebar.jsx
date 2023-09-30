@@ -8,6 +8,10 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
 
+import {Users} from "../../dateList.js";
+import User from '../user/User.jsx';
+
+
 import "./sidebar.scss";
 
 export default function Sidebar() {
@@ -55,78 +59,9 @@ export default function Sidebar() {
                 <button className='sidebar__btn'>Show more</button>
                 <hr className="sidebar__hr" />
                 <ul className="sidebar__friendlist">
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/2.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Jein Doe</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/3.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Mikki Rurk</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/4.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Willa Smeeth</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/5.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Monika Smooth</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/6.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Bred Patison</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/7.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Kaira Natly</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/8.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Dginni Lock</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/9.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Max Bred</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/10.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Lili Brawn</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/2.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Jein Doe</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/3.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Mikki Rurk</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/4.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Willa Smeeth</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/5.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Monika Smooth</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/6.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Bred Patison</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/7.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Kaira Natly</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/8.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Dginni Lock</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/9.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Max Bred</span>
-                    </li>
-                    <li className="sidebar__friendlist-item">
-                        <img className="sidebar__friendlist-item--img" src="./assets/person/10.jpeg" alt="friend-foto" />
-                        <span className="sidebar__friendlist-item--name">Lili Brawn</span>
-                    </li>
+                    {Users.map(user => (
+                       <User key={user.id} user={user}/> 
+                    ))}
                 </ul>
             </div>
         </div>

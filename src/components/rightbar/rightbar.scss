@@ -3,7 +3,6 @@
 
     &__wrapper {
         padding: 20px 20px 0 0;
-
     }
 
     &__birthday {
@@ -37,35 +36,6 @@
             margin: 0;
             list-style: none;
         }
-        &__item{
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        &__img-box{
-            margin-right: 10px;
-            position: relative;
-        }
-        &__img{
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        &__online{
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: rgb(10, 109, 10);
-            top: -2px;
-            right: 0;
-            border: 2px solid #fff;
-        }
-        &__name{
-            font-weight: 500;
-        }
-
 
     }
 

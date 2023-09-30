@@ -1,11 +1,20 @@
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { useState } from 'react';
 
 import {Users} from "../../dateList.js";
 
 import "./post.scss";
 
 export default function Post({post}) {
+   const [like, setLike] = useState(post.like)
+   const [isLiked, setIsLiked] = useState(false)
+
+   const likeHandler = () =>{
+        setLike(isLiked ? like-1  : like+1)
+        setIsLiked(!isLiked)
+   }
    
+
     return (
         <div className="post">
             <div className="post__wrapper">
@@ -25,9 +34,9 @@ export default function Post({post}) {
                 </div>
                 <div className="post__bottom">
                     <div className="post__bottom-left">
-                        <img className="post__bottom-icon" src="./assets/like.png" alt="like-ikon" />
-                        <img className="post__bottom-icon" src="./assets/heart.png" alt="like-ikon" />
-                        <span className="post__bottom-counter">{post.like} people like it</span>
+                        <img className="post__bottom-icon" onClick={likeHandler} src="./assets/like.png" alt="like-ikon" />
+                        <img className="post__bottom-icon" onClick={likeHandler} src="./assets/heart.png" alt="like-ikon" />
+                        <span className="post__bottom-counter">{like} people like it</span>
                     </div>
                     <div className="post__bottom-right">
                         <span className="post__bottom-text">{post.coment} comments</span>

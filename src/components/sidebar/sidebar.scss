@@ -3,6 +3,9 @@
     height: calc(100vh - 50px);
     overflow-y: scroll;
     padding: 20px;
+    position: sticky;
+    top: 50px;
+
 
     &__list {
         margin: 0;
@@ -34,21 +37,6 @@
         padding: 0;
         margin: 0;
         list-style: none;
-
-        &-item {
-            display: flex;
-            column-gap: 15px;
-            align-items: center;
-            margin-bottom: 15px;
-
-            &--img {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-        }
-
     }
 
 }

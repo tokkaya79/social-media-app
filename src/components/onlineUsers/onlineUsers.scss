@@ -1,0 +1,28 @@
+.rightbar-friend__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .rightbar-friend__img-box{
+            margin-right: 10px;
+            position: relative;
+        }
+        .rightbar-friend__img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .rightbar-friend__online{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgb(10, 109, 10);
+            top: -2px;
+            right: 0;
+            border: 2px solid #fff;
+        }
+        .rightbar-friend__name{
+            font-weight: 500;
+        }
