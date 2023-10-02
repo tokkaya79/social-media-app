@@ -57,7 +57,11 @@
         &__link {
             margin-right: 10px;
             font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
             cursor: pointer;
+            color: #fff;
+            text-decoration: none;
         }
 
         &__icons {
@@ -90,6 +94,11 @@
                 border-radius: 50%;
                 object-fit: cover;
                 cursor: pointer;
+            }
+            &-exit {
+                cursor: pointer;
+                color: #fff;
+                text-decoration: none;
             }
         }
     }

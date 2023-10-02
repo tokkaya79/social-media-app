@@ -26,8 +26,10 @@
         border-radius: 10px;
         margin: 30px;
     }
-    &__title{
+    &__title {
         margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     &-friend {
@@ -36,7 +38,40 @@
             margin: 0;
             list-style: none;
         }
-
     }
-
+    &__info {
+        margin-bottom: 30px;
+        &-item {
+            margin-bottom: 10px;
+        }
+        &-key {
+            font-weight: 500;
+            margin-right: 15px;
+            columns: #555;
+        }
+        &-value {
+            font-weight: 300;
+        }
+    }
+    &__followings {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    &__following {
+        display: flex;
+        flex-direction: column;
+    
+        cursor: pointer;
+        &-img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        &-name{
+            font-size: 12px;
+        }
+    }
 }

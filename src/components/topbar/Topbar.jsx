@@ -1,16 +1,23 @@
-import './topbar.scss';
+import { Link } from "react-router-dom";
+import "./topbar.scss";
 
-import SearchIcon from '@mui/icons-material/Search';
-import PersonIcon from '@mui/icons-material/Person';
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import SearchIcon from "@mui/icons-material/Search";
+import PersonIcon from "@mui/icons-material/Person";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 export default function Topbar() {
     return (
         <div className="topbar">
             <div className="container">
                 <div className="topbar__left">
-                    <span className="logo">SocialBar</span>
+                    <Link
+                        to="/"
+                        className="logo"
+                    >
+                        ValushkaBook
+                    </Link>
                 </div>
                 <div className="topbar__center">
                     <div className="searchbar">
@@ -23,8 +30,12 @@ export default function Topbar() {
                 </div>
                 <div className="topbar__right">
                     <div className="topbar__right__links">
-                        <span className="topbar__right__link">Homepage</span>
-                        <span className="topbar__right__link">Timeline</span>
+                        <Link
+                            to="/"
+                            className="topbar__right__link"
+                        >
+                            Home
+                        </Link>
                     </div>
                     <div className="topbar__right__icons">
                         <div className="topbar__right__icons-item">
@@ -46,11 +57,16 @@ export default function Topbar() {
                             </span>
                         </div>
                     </div>
-                    <img
-                        className="topbar__right__icons-img"
-                        src="/assets/person/with_comp_mini.jpg"
-                        alt=""
-                    />
+                    <Link to="/profile">
+                        <img
+                            className="topbar__right__icons-img"
+                            src="/assets/person/with_comp_mini.jpg"
+                            alt=""
+                        />
+                    </Link>
+                    <Link to="/login">
+                        <ExitToAppIcon className="topbar__right__icons-exit" />
+                    </Link>
                 </div>
             </div>
         </div>
