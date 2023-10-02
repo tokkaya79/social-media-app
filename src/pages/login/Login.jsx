@@ -14,9 +14,9 @@ export default function Login() {
                 <div className="login__box">
                     <input className="login__input" placeholder="Email" />
                     <input className="login__input" placeholder="Password" />
-                    <Link  className="login__btn" to="/">Log in</Link>
+                    <Link  className="login__btn" to="/social-media-app">Log in</Link>
                     <span className="login__forgot">Forgot Password?</span>
-                    <Link className="login__register" to="/register">Create a New Account</Link>
+                    <Link className="login__register" to="/social-media-app/register">Create a New Account</Link>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ export default function Topbar() {
             <div className="container">
                 <div className="topbar__left">
                     <Link
-                        to="/"
+                        to="/social-media-app"
                         className="logo"
                     >
                         ValushkaBook
@@ -31,7 +31,7 @@ export default function Topbar() {
                 <div className="topbar__right">
                     <div className="topbar__right__links">
                         <Link
-                            to="/"
+                            to="/social-media-app"
                             className="topbar__right__link"
                         >
                             Home
@@ -57,14 +57,14 @@ export default function Topbar() {
                             </span>
                         </div>
                     </div>
-                    <Link to="/profile">
+                    <Link to="/social-media-app/profile">
                         <img
                             className="topbar__right__icons-img"
                             src="/assets/person/with_comp_mini.jpg"
                             alt=""
                         />
                     </Link>
-                    <Link to="/login">
+                    <Link to="/social-media-app/login">
                         <ExitToAppIcon className="topbar__right__icons-exit" />
                     </Link>
                 </div>

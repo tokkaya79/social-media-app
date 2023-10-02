@@ -12,7 +12,7 @@ export default function Share() {
         <div className="share">
             <div className="share__wrapper">
                 <div className="share__top">
-                    <Link to="/profile">
+                    <Link to="/social-media-app/profile">
                         <img
                             className="share__top-img"
                             src="./assets/person/with_comp_mini.jpg"

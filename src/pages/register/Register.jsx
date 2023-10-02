@@ -31,14 +31,14 @@ export default function Register() {
                             placeholder="Password Again"
                         />
                         <Link
-                            to="/"
+                            to="/social-media-app"
                             className="login__btn"
                         >
                             Sign Up
                         </Link>
 
                         <Link
-                            to="/"
+                            to="/social-media-app"
                             className="login__register"
                         >
                             Log into Account

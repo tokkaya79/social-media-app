@@ -13,19 +13,19 @@ function App() {
             <Router>
                 <Routes>
                     <Route
-                        path="/"
+                        path="/social-media-app"
                         element={<Home />}
                     />
                     <Route
-                        path="/profile"
+                        path="/social-media-app/profile"
                         element={<Profile />}
                     />
                     <Route
-                        path="/login"
+                        path="/social-media-app/login"
                         element={<Login />}
                     />
                     <Route
-                        path="/register"
+                        path="/social-media-app/register"
                         element={<Register />}
                     />
                 </Routes>
